@@ -10,6 +10,9 @@ import { MaterialIcons } from "@expo/vector-icons"
 import { colors } from "@/styles/colors"
 import { styles } from "./styles"
 
+//importação da lista de categorias
+import { categories } from "@/utils/categories"
+
 //importado de outro arquivo
 import { Category } from "@/components/category"
 
@@ -29,7 +32,13 @@ export default function Index() {
             </View>
 
             {/* NESSE CASO, DEFINIR NAME E ICON PROPORCIONA A UTILIZAÇÃO DE PROPRIEDADES DE MANEIRA INDIVIDUAIS, MAS COM COMPONENTES REUTILIZÁVEIS. */}
-            <Category name="Projeto" icon="code" isSelected />
+            {/* coloque o nome da lista e da posição da propriedade. */}
+            <Category 
+                name={categories[0].name} 
+                icon={categories[0].icon} 
+                isSelected 
+            /> 
+
             <Category name="Site" icon="language" isSelected={false}  />
             <Category name="Video" icon="movie" isSelected={false} />
         </View>

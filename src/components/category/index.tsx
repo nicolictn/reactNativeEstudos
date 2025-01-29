@@ -26,6 +26,7 @@ export function Category({ name, icon, isSelected, ...rest }: Props) {
         //estrutura do componente
         <Pressable style={styles.container} {...rest } >
             <MaterialIcons name={icon} size={16} color={color} />
+            {/* PARA UTILIZAR VÁRIOS ESTILOS, É NECESSÁRIO UTILIZAR COLCHETES. */}
             <Text style={[styles.name, { color }]}>{name}</Text>
         </Pressable>
     )
