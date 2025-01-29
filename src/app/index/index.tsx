@@ -1,3 +1,7 @@
+/*npx expo start*/
+
+/*Requisito de componente = deve ser reutilizada a estrutura, usada como padrão ou um elemento grande.*/
+
 /*Importando elementos do RN*/
 import { View, Image, TouchableOpacity} from "react-native"
 //Biblioteca de ícones: https://icons.expo.fyi/Index
@@ -24,7 +28,10 @@ export default function Index() {
                 </TouchableOpacity>
             </View>
 
-            <Category />
+            {/* NESSE CASO, DEFINIR NAME E ICON PROPORCIONA A UTILIZAÇÃO DE PROPRIEDADES DE MANEIRA INDIVIDUAIS, MAS COM COMPONENTES REUTILIZÁVEIS. */}
+            <Category name="Projeto" icon="code" />
+            <Category name="Site" icon="language" />
+            <Category name="Video" icon="movie" />
         </View>
     )
 }
