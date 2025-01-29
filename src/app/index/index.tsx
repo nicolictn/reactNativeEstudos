@@ -29,9 +29,9 @@ export default function Index() {
             </View>
 
             {/* NESSE CASO, DEFINIR NAME E ICON PROPORCIONA A UTILIZAÇÃO DE PROPRIEDADES DE MANEIRA INDIVIDUAIS, MAS COM COMPONENTES REUTILIZÁVEIS. */}
-            <Category name="Projeto" icon="code" />
-            <Category name="Site" icon="language" />
-            <Category name="Video" icon="movie" />
+            <Category name="Projeto" icon="code" isSelected />
+            <Category name="Site" icon="language" isSelected={false}  />
+            <Category name="Video" icon="movie" isSelected={false} />
         </View>
     )
 }
